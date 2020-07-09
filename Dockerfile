@@ -7,7 +7,12 @@ RUN set -ex \
   python-pip \
   zip \
   gpg \
-  git \
+  docker.io \
+  software-properties-common \
+  && apt-get update -y \
+  && add-apt-repository -y ppa:git-core/ppa \
+  && apt-get update -y \
+  && apt-get install git -y \
   && pip install awscli
 
 # install node + yarn
