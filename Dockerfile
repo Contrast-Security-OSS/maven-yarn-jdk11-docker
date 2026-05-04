@@ -1,4 +1,4 @@
-FROM adoptopenjdk/maven-openjdk11:latest
+FROM adoptopenjdk/maven-openjdk11:latest@sha256:fd7ca81dc66b2d42907d2259ac179058bb26d8ce909116e1a8a3b539292cc988
 
 # install aws-cli
 RUN set -ex \
